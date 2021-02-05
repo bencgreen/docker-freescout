@@ -10,9 +10,8 @@ set -euo pipefail
 REPO=https://github.com/freescout-helpdesk/freescout
 TMP=$(mktemp -d)
 cd ${TMP}
-git clone ${REPO} . && \
-    git fetch --all --tags
-git checkout "tags/${FREESCOUT_VERSION}"
+git clone "${REPO}" .
+git checkout "${FREESCOUT_VERSION}"
 
 
 #======================================================================================================================
