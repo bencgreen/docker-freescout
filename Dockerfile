@@ -10,11 +10,15 @@ ARG PHP_VERSION=7.4.15-r0
 RUN apk -U upgrade \
     && apk add \
         php7-curl=${PHP_VERSION} \
+        php7-dom=${PHP_VERSION} \
+        php7-fileinfo=${PHP_VERSION} \
         php7-gd=${PHP_VERSION} \
         php7-imap=${PHP_VERSION} \
         php7-json=${PHP_VERSION} \
         php7-mbstring=${PHP_VERSION} \
         php7-mysqli=${PHP_VERSION} \
+        php7-mysqlnd=${PHP_VERSION} \
+        php7-tokenizer=${PHP_VERSION} \
         php7-xml=${PHP_VERSION} \
         php7-zip=${PHP_VERSION} \
     && rm -rf /var/cache/apk/* /www/* /tmp/*
