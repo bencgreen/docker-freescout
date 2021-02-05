@@ -6,9 +6,6 @@ on:
       - '**'
     tags-ignore:
       - '**'
-    paths:
-      - '.github/workflows/build-dev.yml'
-      - 'overlay/**'
 
 jobs:
   main:
