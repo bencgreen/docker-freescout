@@ -10,15 +10,16 @@ set -euo pipefail
 REPO=https://github.com/freescout-helpdesk/freescout
 TMP=$(mktemp -d)
 cd ${TMP}
-git clone ${REPO} ${TMP}
-git checkout ${FREESCOUT_VERSION} && \
-    rm -f .env.example .env.travis
+git clone ${REPO} . && \
+    git fetch --all --tags
+git checkout "tags/${FREESCOUT_VERSION}"
 
 
 #======================================================================================================================
 # Install FreeScout
 #======================================================================================================================
 
+rm -f .env.example .env.travis
 composer install
 chown -R www:www .
 
