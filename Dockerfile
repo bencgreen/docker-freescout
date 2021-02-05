@@ -29,7 +29,7 @@ RUN apk -U upgrade \
 
 COPY ./overlay /
 
-VOLUME [ "/data" ]
+VOLUME [ "/fs" ]
 
 ARG \
     # The FreeScout version to install
