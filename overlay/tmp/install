@@ -10,7 +10,7 @@ set -euo pipefail
 REPO=https://github.com/freescout-helpdesk/freescout
 TMP=$(mktemp -d)
 cd ${TMP}
-git clone ${REPO} ${TMP} .
+git clone ${REPO} ${TMP}
 git checkout ${FREESCOUT_VERSION} && \
     rm -f .env.example .env.travis
 
