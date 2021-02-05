@@ -31,4 +31,4 @@ RUN apk add --virtual .install composer git \
     && chmod +x /tmp/install \
     && /tmp/install \
     && apk del .install \
-    && rm -rf /var/cache/apk/* /tmp/*
+    && rm -rf /root/.composer /var/cache/apk/* /tmp/* /var/tmp/*

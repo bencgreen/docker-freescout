@@ -19,7 +19,7 @@ git checkout "${FREESCOUT_VERSION}"
 #======================================================================================================================
 
 rm -f .env.example .env.travis
-composer install
+composer update && composer install
 chown -R www:www .
 
 
