@@ -13,13 +13,17 @@ RUN apk -U upgrade \
         php7-dom=${PHP_VERSION} \
         php7-fileinfo=${PHP_VERSION} \
         php7-gd=${PHP_VERSION} \
+        php7-iconv=${PHP_VERSION} \
         php7-imap=${PHP_VERSION} \
         php7-json=${PHP_VERSION} \
         php7-mbstring=${PHP_VERSION} \
         php7-mysqli=${PHP_VERSION} \
         php7-mysqlnd=${PHP_VERSION} \
+        php7-openssl=${PHP_VERSION} \
+        php7-simplexml=${PHP_VERSION} \
         php7-tokenizer=${PHP_VERSION} \
         php7-xml=${PHP_VERSION} \
+        php7-xmlwriter=${PHP_VERSION} \
         php7-zip=${PHP_VERSION} \
     && rm -rf /var/cache/apk/* /www/* /tmp/*
 
