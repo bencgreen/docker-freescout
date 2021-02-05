@@ -25,7 +25,7 @@ VOLUME [ "/data" ]
 
 ARG \
     # The FreeScout version to install
-    FREESCOUT_VERSION=1.16.13
+    FREESCOUT_VERSION=1.6.13
 
 RUN apk add --virtual .install composer git \
     && chmod +x /tmp/install \
